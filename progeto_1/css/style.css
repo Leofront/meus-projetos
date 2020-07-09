@@ -1,0 +1,355 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.center{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 0 2%;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #212343;
+	max-width: 1280px;
+	padding: 0 2%;
+}
+
+img{
+	margin: 20px;
+}
+
+.container-banner{
+	background-image:url('..//imagem/banner.png');
+	height: 557px;
+	width: 100%; 
+	max-width: 1280px;
+	background-position: center;
+	background-size: cover;
+	padding: 0 2%;
+	
+}
+
+.form{
+	width: 100%;
+	max-width: 350px;
+	background-color: white;
+	float: right;
+	height: calc(100% + 60px);
+	border: 8px solid #ccc;
+	padding: 20px;
+	outline: none;
+	position: relative;
+	top:-30px;
+	box-sizing: border-box;
+
+}
+
+.form h2{
+	font-size: 30px;
+	color: grey;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+.input-container{
+	margin-top: 20px;
+}
+
+.input-container span{
+	font-size: 20px;
+	width: 100%;
+	color: #bbbbbbbb;
+}
+
+.input-container [type=text] , [type=password]{
+	padding: 25px 10px;
+	outline: none;
+	width: 100%;
+	margin-top: 8px;
+}
+
+.campos{
+	width: 100%;
+	color: #bbbbbbbb;
+	text-decoration: underline;
+	font-size: 20px;
+	margin: 20px;
+	color: #bbbbbb
+}
+.submit{
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+.submit > input[type=submit]{
+	padding: 20px 15px;
+	margin-top: 10px;
+	width: 85%;
+	background-color: #212343;
+	color: white;
+	cursor: pointer;
+	border-radius: 10px;
+	outline: none;
+	border:0; 
+	font-size: 20px;
+
+}
+
+input[type=submit]:hover{
+	background-color: #212370;
+	color: white;
+
+}
+
+
+.container-lista{
+	width: 550px;
+	height: 270px;
+	float: left;
+	margin: 100px 50px;
+	background-color: rgba(33,35,67,0.7);
+	padding: 30px;
+
+}
+
+.container-lista ul li {
+	color: white;
+	list-style-position: inside;
+	margin-top: 20px;
+}
+
+.container-2{
+	border-bottom: 3px solid #212343;
+	width: 100%;
+	background-color: #dddddddd;
+	text-align: center;
+	padding: 40px 2%;
+}
+.container-2 h2{
+	 margin-bottom: 25px;
+	 font-size: 40px;
+	 font-weight: normal;
+	 text-decoration: underline;
+}
+
+.container-2 p{
+		font-size: 20px;
+		text-align: justify;
+		max-width: 750px;
+		margin: 15px 0;
+		display: inline-block;
+}
+
+.arrow{
+	background-image: url('../imagem/arrow.png');
+	height: 40px;
+	width: 40px;
+	position: relative;
+	top: 60px;
+	left: 48%;
+	background-size:100% 100%;
+}
+
+.section{
+
+	background-color: #dddddddd;
+	padding: 90px 2%;
+}
+
+.section > .titulo {
+	text-align: center;
+	font-weight: normal;
+	font-size: 35px;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.container-single{
+	border: 2px solid #212343;
+	float: left;
+	background-color: #ccc;
+	width: 32.00%;
+	margin-top: 40px;
+	padding: 40px;
+	text-align: center;
+	margin-left: 10px;
+
+}
+
+.container-single h2 {
+	font-weight: normal;
+	font-size: 25px;
+	margin:10px 0;
+	text-decoration: underline;
+}
+
+.container-single p{
+	padding: 10px;
+		text-align: justify;
+		font-size: 18px;
+
+}
+
+.footer{
+	background-color: #dddddddd;
+	margin-top: -20px;
+	text-align: center;
+	border-top: 3px solid #212343;
+}
+
+.lista{
+	padding: 20px 0;
+}
+.lista ul li {
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 1110px){
+ 	
+ 	.header{
+ 		height: auto;
+ 		width: 100%;
+ 		padding: 15px 0;
+ 		text-align: center;
+ 	}
+ 	.header img{
+ 		margin: 0;
+ 	}
+
+ 	.container-banner{
+	padding: 40px 2%;
+	height: auto;
+	width: 100%;
+	text-align: center;}
+
+	.form{
+	padding: 10px;
+	float: right;
+	margin-top: 30px;
+	top: 0;
+	max-width: 400px;
+	width: 60%;
+	height:auto;
+	}
+
+	.container-lista{
+	padding:30px;
+	float: left;
+	width: 45%;
+	max-width: 500px;
+	margin-top: 50px;
+	height: auto;
+		
+}
+
+
+
+ 
+}
+
+
+@media screen and (max-width: 1050px){
+
+
+	.container-lista{
+		margin-top::20px;
+
+		float: left;
+		width: 90%;
+		max-width: 350px;
+
+	}
+
+	.form{
+		float: right;
+		display: inline-block;
+		width: 90%;
+		max-width: 350px;
+	}
+
+	.container-single{
+		
+		float: left;
+		width: 32.00%;
+		height: auto;
+		max-width: 300px;
+	}
+
+	.container-single p{
+		max-width: 400px;
+		height: auto;
+		text-align: justify;
+	}
+
+	.arrow{
+	width: 40px;
+	height: 40px;
+	background-size:100% 100%;
+	position: relative;
+	top: 60px;
+	left:47%;
+	background-image: url(../imagem/arrow.png);
+
+}
+
+ 	.container-2{
+ 		padding-left: 4%;
+ 		padding-right: 4%;
+ 		
+ 	}
+	
+	}
+@media screen and (max-width:885px){
+	 
+	 .form { 
+		float: none;
+		width: 100%;
+		max-width: 415px;
+		display: inline-block;
+	}
+
+	.container-lista{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 415px;
+		margin: 0;
+	}
+	.container-single{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 415px;
+
+	}
+	.container-single p{ 
+			font-size: 20px;
+	 }
+
+	.section{
+		text-align: center;
+	}
+
+	.arrow{
+		left: 47%;
+	}
+}
+
+/*DEUS NO COMANDO DE TUDO*/
+
+
